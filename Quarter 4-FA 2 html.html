@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <style>
+    .outer {
+      border: 1px solid black;
+      padding: 5px;
+      display: inline-block;
+    }
+
+    .grid {
+      display: inline-block;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .cell {
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <p>[enter a number between 2 and 10]</p>
+  <input type="text" id="rows"> by 
+  <input type="text" id="columns">
+  <br><br>
+  <button onclick="generateTable()">Click here when ready!</button>
+  <br><br>
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
